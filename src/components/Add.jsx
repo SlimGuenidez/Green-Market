@@ -3,14 +3,14 @@ import axios from 'axios';
 import React,{useState,useEffect} from 'react';
 import Layout from "./Layout.jsx"
 const Add = () => {
-    const [quantity,setQuantity] =useState(null)
+    const [quantity,setQuantity] = useState(null)
     const [description,setDescription] = useState(null)
     const [price,setPrice] = useState(null)
     const [image,setImage] = useState(null)
     const [list,setList]=useState([])
-    const [updateQuant,setUpdateQuant]=useState(null)
-    const [updateDescr,setUpdateDescr]=useState(null)
-    const [updatePrice,setUpdatePrice]=useState(null)
+    const [updateQuant,setUpdateQuant]= useState(null)
+    const [updateDescr,setUpdateDescr]= useState(null)
+    const [updatePrice,setUpdatePrice]= useState(null)
     const [index,setIndex]=useState(null)
 
   useEffect(()=>{
@@ -19,6 +19,7 @@ const Add = () => {
     .catch(err=>console.log(err))
   },[list])
     const post=()=>{
+        console.log(quantity,description,image,price);
         if(quantity&&description&&image&&price){
             axios.post('http://localhost:3000/api/item/insertItem',
             {description:description, quantity:quantity, image:image, price:price})
