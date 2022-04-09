@@ -8,16 +8,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Layout from "./Layout.jsx";
 const App = () => {
+  
     return (
+      
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<Layout />}> */}
+        
             <Route index element={<Login />} />
             <Route path='profil' element={<Profil />} />
             <Route path="add" element={<Add/>}/>
             <Route path="home" element={<Home />} />
             <Route path="signup" element={<Signup />} />
-           {/* </Route> */}
+          
           
         </Routes>
       </BrowserRouter>

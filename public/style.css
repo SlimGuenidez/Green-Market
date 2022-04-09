@@ -1,6 +1,20 @@
+
+    
 body {
+    font-family: 'Jeju Gothic', sans-serif;
+    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 300px;
+    
+    line-height: 50px;
+    margin: 0px;
+    color: #292929;
+    
     background-image: url(http://bdbackgrounds.com/media/zoo/images/1-springgreenseamless_ebe5092a74a710934c684feb420e981c.jpg)
 }
+ 
 
 .Box {
     text-align : center;
@@ -20,3 +34,57 @@ body {
      width : 230px ;
      height : 35px
 }
+.card {
+    border: 1px solid rgba(0, 0, 0, .25);
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    /* height: 300px; */
+    line-height: 50px;
+  }
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #F3F3F3;
+    background-color: #C0163A;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .nav {
+    background-color: #81a4d1;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #F3F3F3;
+  }
+  ul{
+    display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+  }
+  p{
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #F3F3F3;
+    background-color: #c0a716;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 1em;
+  }

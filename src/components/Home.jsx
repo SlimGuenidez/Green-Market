@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
 import { useEffect,useState } from "react";
-// import Card from './Card.jsx'
 import Basket from './Basket.jsx'
 
 
@@ -43,7 +42,7 @@ const changeQuantity=(event,elem)=>{
     {index==0 && <div>
       <button onClick={()=>setIndex(1)}>Basket</button>
       {list.map((elem,index)=>{
-          return (<div key={index}> 
+          return (<div className="card" key={index}> 
            <img src={elem.image}/>
            <p>{elem.description} {elem.price}</p>
       

@@ -4,20 +4,20 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
     return (
         <>
-          <nav>
+          <nav className="nav">
             <ul>
-            <li>
+            <p>
                 <Link to="/home">home</Link>
-              </li>
-              <li>
+              </p>
+              <p>
                 <Link to="/add">add item</Link>
-              </li>
-              <li>
+              </p>
+              <p>
                 <Link to="/profil">Profil</Link>
-              </li>
-              <li>
+              </p>
+              <p>
                 <Link to="/">Logout</Link>
-              </li>
+              </p>
             </ul>
           </nav>
     

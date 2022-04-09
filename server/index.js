@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/public"));
 
 app.use("/api/item", itemRoutes);
-app.use("api/user",userRoutes);
+app.use("/api/user",userRoutes);
 
 app.listen(PORT, function () {
   console.log("listening on port 3000!");

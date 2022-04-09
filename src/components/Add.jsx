@@ -73,7 +73,7 @@ const Add = () => {
             {list.map((elem,i)=>{
                 if(elem.id===index){
                     return( 
-                        <div key={i}>
+                        <div className="card"key={i}>
                             
                             <input type="text" placeholder="description" onChange={(e)=>setUpdateDescr(e.target.value)}/>
                             <input type="text" placeholder="quantity" onChange={(e)=>setUpdateQuant(e.target.value)}/>
@@ -85,10 +85,8 @@ const Add = () => {
                     }
                 else{
                     return(
-                        <div key={i}>
-                        <li>{elem.description}</li>
-                        <li>{elem.quantity}</li>
-                        <li>{elem.price}</li>
+                        <div className="card"key={i}>
+                        <p>element :{elem.description} quantity: {elem.quantity} price: {elem.price}</p>
                         <img src={elem.image}/>
                         <button onClick={()=>changeView(elem)}>update</button>
                         <button onClick={()=>dlt(elem.id)}>delete</button>
