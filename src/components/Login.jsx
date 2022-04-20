@@ -24,9 +24,9 @@ const Login = () => {
       }
   return ( 
     <div>
-      <h1 className="Title">Green Market</h1>
-      <div className='card' id="login" style={{textAlign: 'center', marginTop: '150px' }}> {console.log(username,password)}
-          <input className="Input" type="text" onChange={(event) => setName(event.target.value)} placeholder="Email or username.." required/> <br/><br />
+      <img width='200px' height='200px' src="https://images-platform.99static.com/PFO3fTK_2UgWPXb1Ne_dNExJRBw=/0x0:960x960/500x500/top/smart/99designs-contests-attachments/85/85932/attachment_85932627" alt="" />
+      <div className='card' id="login" style={{textAlign: 'center', marginTop: '50px' }}> {console.log(username,password)}
+          <input className="Input" type="text" onChange={(event) => setName(event.target.value)} placeholder="Email.." required/> <br/><br />
           
           <input className="Input" type="password"  onChange={(event) => setPassword(event.target.value)} placeholder="Password.." required/> <br/><br />
 

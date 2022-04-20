@@ -43,8 +43,8 @@ const changeQuantity=(event,elem)=>{
       <button onClick={()=>setIndex(1)}>Basket</button>
       {list.map((elem,index)=>{
           return (<div className="card" key={index}> 
-           <img src={elem.image}/>
-           <p>{elem.description} {elem.price}</p>
+           <img src={elem.image} width="600px" height="600px"/>
+           <p>element: {elem.description} / price of one kg : {elem.price}</p>
       
            <input type="number"  onChange={changeQuantity} id={elem.description} />
             <button type="button" onClick={addToBasket} >add to basket</button>

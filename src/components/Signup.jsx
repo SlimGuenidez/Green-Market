@@ -24,8 +24,11 @@ const Signup = ()=>{
         }
   
     return (
-    <div  className="card" style={{textAlign: 'center', marginTop: '150px' }}>
+      <div>
+              <img width='200px' height='200px' src="https://images-platform.99static.com/PFO3fTK_2UgWPXb1Ne_dNExJRBw=/0x0:960x960/500x500/top/smart/99designs-contests-attachments/85/85932/attachment_85932627" alt="" />
+    <div  className="card" style={{textAlign: 'center', marginTop: '50px' }}>
       {console.log(username,password,email)}
+
         <input  type="email" onChange={(event) => setEmail(event.target.value)} placeholder="Email.." required/> <br /><br />
 
         <input  type="text" onChange={(event) => setName(event.target.value)} placeholder="Username.." required/>  <br /><br />
@@ -34,7 +37,7 @@ const Signup = ()=>{
         <button className="Login" onClick={post}>Register</button>
         <Link to="/"><button className="Login">Login</button></Link>
 
-
+</div>
     </div>
 )
 }

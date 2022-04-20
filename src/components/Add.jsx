@@ -86,8 +86,8 @@ const Add = () => {
                 else{
                     return(
                         <div className="card"key={i}>
-                        <p>element :{elem.description} quantity: {elem.quantity} price: {elem.price}</p>
-                        <img src={elem.image}/>
+                        <p>element :{elem.description} / quantity: {elem.quantity} kg / price: {elem.price}</p>
+                        <img src={elem.image} width="600px" height="600px"/>
                         <button onClick={()=>changeView(elem)}>update</button>
                         <button onClick={()=>dlt(elem.id)}>delete</button>
                         </div>
